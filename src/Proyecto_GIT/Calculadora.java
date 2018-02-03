@@ -73,7 +73,7 @@ public class Calculadora {
 	
 	public void raiz_cuadrada(){
 		if(this.resultado < Integer.MAX_VALUE){
-			this.resultado = this.resultado * this.resultado;
+			this.resultado = this.resultado*this.resultado;
 			}
 			else{
 				try {
@@ -82,6 +82,10 @@ public class Calculadora {
 					System.out.println(e);
 				}
 			}
+	}
+	
+	public void potencia(double a){
+		this.resultado=Math.pow(this.resultado, a);
 	}
 	
 	

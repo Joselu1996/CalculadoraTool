@@ -28,7 +28,8 @@ public class test {
 			System.out.println("4. Division");
 			System.out.println("5. Resetear");
 			System.out.println("6. Raiz cuadrada");
-			System.out.println("7. Salir");
+			System.out.println("7. Raiz x");
+			System.out.println("8. Salir.");
 			op=sc.nextInt();
 			switch (op){
 			case 1:
@@ -61,6 +62,11 @@ public class test {
 				System.out.println("El resultado es: "+c1.retornaResu());
 				break;
 			case 7:
+				System.out.println("Porfavor Introduzca el numero al que desea elevar.");
+				c1.potencia(input(sc.next()));
+				System.out.println("El resultado es: "+c1.retornaResu());
+				break;
+			case 8:
 				op=0;
 				break;
 				
