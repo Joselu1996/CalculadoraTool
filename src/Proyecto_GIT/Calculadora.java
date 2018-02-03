@@ -62,7 +62,6 @@ public class Calculadora {
 	public void div(double d){
 		if(d!=0){
 		this.resultado = this.resultado / d;
-		System.out.println(this.resultado);
 		}
 		else{try {
 			throw new Exception("No se puede dividir por 0");
@@ -70,7 +69,20 @@ public class Calculadora {
 			System.out.println(e);
 		}
 		}
-}
+	}
+	
+	public void raiz_cuadrada(){
+		if(this.resultado < Integer.MAX_VALUE){
+			this.resultado = this.resultado * this.resultado;
+			}
+			else{
+				try {
+					throw new Exception("Habrá overflow con esta raiz cuadrada.");
+				} catch (Exception e) {
+					System.out.println(e);
+				}
+			}
+	}
 	
 	
 	public void reset (String e){
