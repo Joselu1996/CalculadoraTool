@@ -27,7 +27,8 @@ public class test {
 			System.out.println("3. Multiplicación");
 			System.out.println("4. Division");
 			System.out.println("5. Resetear");
-			System.out.println("6. Salir");
+			System.out.println("6. Raiz cuadrada");
+			System.out.println("7. Salir");
 			op=sc.nextInt();
 			switch (op){
 			case 1:
@@ -55,7 +56,11 @@ public class test {
 				c1.reset("Reset");
 				System.out.println("El resultado es: "+c1.retornaResu());
 				break;
-			case 6:
+			case 6://VERSION 2
+				c1.raiz_cuadrada();
+				System.out.println("El resultado es: "+c1.retornaResu());
+				break;
+			case 7:
 				op=0;
 				break;
 				
